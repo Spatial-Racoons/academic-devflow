@@ -389,3 +389,67 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA13.04 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de release?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema apaga o plano de release e redireciona o usuário a página de planos de release, na qual exibe a mensagem "Plano de release apagado". |
 | TA13.05 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de release?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga o plano de release e redireciona o usuário a página de planos de release. |
 | TA13.06 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que sim. O sistema redireciona o usuário para a página de planos de release, na qual a mensagem "Remova os projetos do plano de release antes de excluí-lo" é exibida. |
+
+### US15 - Visualizar dashboard
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve ser capaz de mostrar um dashboard com gráficos e figuras com métricas de cada projeto. |
+| **Requisitos envolvidos** | RF01, RF2, RF9, RF16, RNF1, RNF2| 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Hilário Dantas |
+| **Desenvolvedor** | Guilherme Ângelo  |
+| **Revisor** | - |
+| **Testador** | Adriel Faria |
+
+### US15 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA15.01 | O usuário acessa a página de dashboard, seleciona o projeto e na tela será mostrado um dashboard com gráficos e figuras a cerca do projeto selecionado| 
+
+### US16 - Cadastrar pontuação
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir que o coordenador atribua pontuações para cada etapa do projeto.|
+| **Requisitos envolvidos** | RF01, RF2, RF5, RF18, RNF1, RNF2| 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Hilário  Dantas |
+| **Desenvolvedor** | Guilherme Ângelo |
+| **Revisor** | - |
+| **Testador** | Adriel Faria |
+
+### US16 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA16.01 | O coordenador acessa a página de projetos, seleciona o projeto e atribui uma pontuação para cada etapa do projeto.| 
+
+### US17 - Cadastrar penalidade
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir que o coordenador atribua penalidades para atrasos de tarefas ou não entrega de artefatos.|
+| **Requisitos envolvidos** | RF01, RF2, RF5, RF18, RF19, RNF1, RNF2| 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Hilário Dantas |
+| **Desenvolvedor** | Adriel Faria |
+| **Revisor** | - |
+| **Testador** | Guilherme Ângelo  |
+
+### US17 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA17.01 | O coordenador acessa a página de projetos, seleciona o projeto e atribui uma penalidade para atrasos de tarefas ou artefatos.| 
+
