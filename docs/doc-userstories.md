@@ -210,25 +210,106 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 
 ### US07 - Manter Artefato
 
-|            |            |   |
-|------------|------------|---|
-|**descrição**            | O sistema deve permitir que seja realizado o cadastro, leitura, update e delete de artefatos. Além disso, um artefato está associado a um projeto, etapa e iteraçao, possibilitando realizar o controle de qual projeto, etapa e iteração tal artefato pertence. Os artefatos ajudarão a dar suporte ao andamento do projeto, auxiliando também no planejamento.|
+|            |            |
+|------------|------------|
+|**descrição**            | O sistema deve permitir que seja realizado o cadastro, leitura, update e delete de artefatos. Além disso, um artefato está associado a um projeto, etapa e iteraçao, possibilitando realizar o controle de qual projeto, etapa e iteração tal artefato pertence. Os artefatos ajudarão a dar suporte ao andamento do projeto, auxiliando também no planejamento. |
 |**Requisitos envolvidos**| RF09, RF18 ,RF19 |
 |**Prioridade**           | importante |
 |**Estimativa**           | 10h |
 |**Tempo gasto (real)**   | - |
 |**Tamanho Funcional**    | 7 |
 |**Analista**             | Guilherme Angelo de Medeiros |
-| **Revisor**             | Hilário Dantas |
-| **Testador**            | Adriel Faria dos Santos |
+| **Revisor**             | - |
+| **Testador**            | - |
 
 ### US07 - Testes de Aceitação (TA)
 
 | Código | Descrição |
 |-----|-----|
 | TA07.01 | O usuário informa na tela as informações necessárias ao cadastro do artefato, ao clicar no botão salvar os dados deve ser exibida uma mensagem de confirmação.|
-| TA07.02 | Ao clicar em "listar artefato", Todos os artefatos que ainda não foram entregues devem ser exibidos, assim também como os recém cadastrados.
+| TA07.02 | Ao clicar em "listar artefato", Todos os artefatos que ainda não foram entregues devem ser exibidos, assim também como os recém cadastrados. |
 | TA07.03 | Caso o usuário preencha alguns dos campos incorretamente durante o cadastro, deve ser exibida uma mensagem alertando qual campo foi preenchido incorretamente, além disso, os dados da tentativa fracassada não podem ser armazenados. |
 | TA07.04 | Na listagem de Artefato o responsável pelo projeto poderá alterar o artefato clicando em "Alterar", posteriormente ele deverá preencher qual ou quais campos ele deseja alterar. Quando realizada a alteração uma mesagem de sucesso deve ser exibida, confimando que a alteração foi realizada com sucesso. |
 | TA07.05 | O responsável pelo projeto durante a alteração do artefato preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
 | TA07.06 | O Artefato no momento em que responsável pelo projeto ao clicar em "deletar" deve ser excluido, e uma mesagem de sucesso deve ser exibida. |
+
+### US11 - Manter Atividade
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir o cadastro, visualização, edição e exclusão das atividades. Uma atividade tem código, nome, descrição, situação, data de início, data de conclusão, projeto, responsável. As informações referentes a atividade podem ser manipuladas pelos coordenadores e visualizadas pelos membros responsáveis pelo desenvolvimento do projeto. Todas as operações demandam que o usuário esteja logado. |
+| **Requisitos envolvidos** | RF01, RF02, RF10, RNF1, RNF2, RNF3 | 
+| **Prioridade** | Importante |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Adriel Faria dos Santos |
+| **Desenvolvedor** | - |
+| **Revisor** | - |
+| **Testador** | - |
+
+### US11 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA11.01 | O usuário acessa um projeto que coordena e clica no botão adicionar atividade. O sistema o redireciona para a tela de cadastro de atividade, onde há um formulário com os campos nome, descrição, data de início, data de conclusão e responsável, o usuário preenche os campos obrigatórios e submete o formulário. O sistema salva a nova atividade e o redireciona para a tela de projeto, na qual exibe a mensagem "Atividade cadastrada". |
+| TA11.02 | O usuário acessa um projeto que coordena e clica no botão adicionar atividade. O sistema o redireciona para a tela de cadastro de atividade, onde há um formulário com os campos nome, descrição, data de início, data de conclusão e responsável, o usuário não preenche todos os campos obrigatórios e tenta submeter o formulário. O sistema não permite a submissão e não salva a nova atividade, exibindo uma mensagem referente ao erro de validação do formulário. |
+| TA11.03 | O usuário acessa uma atividade de um projeto que coordena e clica no botão editar atividade. O sistema o redireciona para a tela de edição de atividade, onde há um formulário com os campos nome, descrição, data de início, data de conclusão e responsável, já preenchidos com os valores salvos atualmente. O usuário preenche os campos obrigatórios e submete o formulário. O sistema salva as alterações e o redireciona para a tela de projeto, na qual exibe a mensagem "Atividade atualizada". |
+| TA11.04 | O usuário acessa uma atividade de um projeto que coordena e clica no botão editar atividade. O sistema o redireciona para a tela de edição de atividade, onde há um formulário com os campos nome, descrição, data de início, data de conclusão e responsável, já preenchidos com os valores salvos atualmente. O usuário não preenche todos os campos obrigatórios e tenta submeter o formulário. O sistema não permite a submissão e não salva as alterações, exibindo uma mensagem referente ao erro de validação do formulário. |
+| TA11.05 | O usuário acessa uma atividade de um projeto que coordena e clica no botão excluir atividade. O sistema o redireciona para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar a atividade?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema exclui a atividade e o redireciona para a tela de projeto, na qual exibe a mensagem "Atividade apagada". |
+| TA11.06 | O usuário acessa uma atividade de um projeto que coordena e clica no botão excluir atividade. O sistema o redireciona para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar a atividade?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga a atividade e redireciona o usuário a página de projeto. |
+| TA11.07 | O usuário acessa um projeto que coordena. Entre os detalhes do projeto estão as atividades referentes aquele projeto, com cada uma exibindo nome e situação. O usuário clica no nome de uma das atividades. O sistema o redireciona para a tela de visualização de atividade, na qual as informações nome, descrição, situação, data de início, data de conclusão e responsável aparecem. |
+| TA11.08 | O usuário acessa um projeto do qual é membro. Entre os detalhes do projeto estão as atividades referentes aquele projeto em que ele é responsável, com cada uma exibindo nome e situação. O usuário clica no nome de uma das atividades. O sistema o redireciona para a tela de visualização de atividade, na qual as informações nome, descrição, situação, data de início, data de conclusão e responsável aparecem. |
+
+
+### US12 - Manter plano de iteração
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir o cadastro do plano de iteração, assim como a visualização, alteração e exclusão. Um plano de iterações tem dono, lista de projetos e uma lista de iterações. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
+| **Requisitos envolvidos** | RF01, RF11, RNF1, RNF2, RNF3 | 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Adriel Faria dos Santos |
+| **Desenvolvedor** | - |
+| **Revisor** | - |
+| **Testador** | - |
+
+### US12 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA12.01 | O usuário acessa a página de planos de iteração e clica no botão adicionar novo plano de iteração. O sistema o redireciona para a tela de cadastro de plano de iteração, onde há um formulário com os campos projeto e iterações, no qual ele pode selecionar um ou mais projetos que coordena e várias iterações que ele já tenha salvo ou adicionar uma nova a partir do botão "nova iteração". O usuário seleciona os projetos as iterações que ele deseja incluir naquele plano e submete o formulário. O sistema salva o novo plano de iterações e o redireciona para a tela de planos iteração, na qual exibe a mensagem "Plano de iteração cadastrado". |
+| TA12.02 | O usuário acessa a página de planos de iteração e seleciona um de seus planos de iteração. O sistema o redireciona para a tela de visualização de plano de iteração, onde exibe os projetos a que aquele plano está atrelado e detalhes das iterações que o compõem. |
+| TA12.03 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão editar. O sistema o redireciona para a tela de edição de plano de iteração, onde há um formulário com os campos projeto e iterações, no qual ele pode selecionar um ou mais projetos que coordena e várias iterações que ele já tenha salvo ou adicionar uma nova a partir do botão "nova iteração". Os projetos e iterações já presentes naquele plano vêm selecionados por padrão. O usuário modifica os projetos e as iterações que utilizam aquele plano e submete o formulário. O sistema salva as modificações e o redireciona para a tela de visualização de planos de iteração, na qual a mensagem "Plano de iteração atualizado" é exibida. |
+| TA12.04 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de iterações?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema apaga o plano de iterações e redireciona o usuário a página de planos de iteração, na qual exibe a mensagem "Plano de iterações apagado". |
+| TA12.05 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de iterações?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga o plano de iterações e redireciona o usuário a página de planos de iteração. |
+| TA12.06 | O usuário acessa a página de visualização de um de seus planos de iteração e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que sim. O sistema redireciona o usuário para a página de planos de iteração, na qual a mensagem "Remova os projetos do plano de iteração antes de excluí-lo" é exibida. |
+
+### US13 - Manter plano de release
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir o cadastro do plano de release, assim como a visualização, alteração e exclusão. Um plano de releases tem dono, lista de projetos e uma lista de releases. As informações referentes ao plano de iteração podem ser manipuladas pelos coordenadores. Todas as operações demandam que o usuário esteja logado. |
+| **Requisitos envolvidos** | RF01, RF11, RNF1, RNF2, RNF3 | 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Adriel Faria dos Santos |
+| **Desenvolvedor** | - |
+| **Revisor** | - |
+| **Testador** | - |
+
+### US13 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA13.01 | O usuário acessa a página de planos de release e clica no botão adicionar novo plano de release. O sistema o redireciona para a tela de cadastro de plano de release, onde há um formulário com os campos projeto e releases, no qual ele pode selecionar um ou mais projetos que coordena e várias releases que ele já tenha salvo ou adicionar uma nova a partir do botão "nova release". O usuário seleciona os projetos e as releases que ele deseja incluir naquele plano e submete o formulário. O sistema salva o novo plano de releases e o redireciona para a tela de planos de release, na qual exibe a mensagem "Plano de release cadastrado". |
+| TA13.02 | O usuário acessa a página de planos de release e seleciona um de seus planos de release. O sistema o redireciona para a tela de visualização de plano de release, onde exibe os projetos a que aquele plano está atrelado e detalhes das releases que o compõem. |
+| TA13.03 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão editar. O sistema o redireciona para a tela de edição de plano de release, onde há um formulário com os campos projeto e releases, no qual ele pode selecionar um ou mais projetos que coordena e várias releases que ele já tenha salvo ou adicionar uma nova a partir do botão "nova release". Os projetos e releases já presentes naquele plano vêm selecionados por padrão. O usuário modifica os projetos e as releases que utilizam aquele plano e submete o formulário. O sistema salva as modificações e o redireciona para a tela de visualização de planos de release, na qual a mensagem "Plano de release atualizado" é exibida. |
+| TA13.04 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de release?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema apaga o plano de release e redireciona o usuário a página de planos de release, na qual exibe a mensagem "Plano de release apagado". |
+| TA13.05 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de release?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga o plano de release e redireciona o usuário a página de planos de release. |
+| TA13.06 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que sim. O sistema redireciona o usuário para a página de planos de release, na qual a mensagem "Remova os projetos do plano de release antes de excluí-lo" é exibida. |
