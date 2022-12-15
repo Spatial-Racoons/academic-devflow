@@ -233,6 +233,82 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA07.05 | O responsável pelo projeto durante a alteração do artefato preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
 | TA07.06 | O Artefato no momento em que responsável pelo projeto ao clicar em "deletar" deve ser excluido, e uma mesagem de sucesso deve ser exibida. |
 
+### US08 - Manter Coordenador
+
+|            |            |
+|------------|------------|
+|**descrição**            | O sistema deve permitir que seja realizado o insert, read, update e delete de coordenadores. Além disso, um coordenador é um usuário do sistema e está associado à nenhum ou vários projetos,contudo o projeto será coordenado apenas por um coodenador, também está associado a uma equipe , possibilitando realizar o controle e gerenciamento de seus membros, sendo assim, o coordenado também é membro de uma equipe |
+|**Requisitos envolvidos**| RF02, RF04 ,RF06, RF07 |
+|**Prioridade**           | importante |
+|**Estimativa**           | 10h |
+|**Tempo gasto (real)**   | - |
+|**Tamanho Funcional**    | 10 |
+|**Analista**             | Hilário Dantas |
+| **Revisor**             | Guilherme Ângelo |
+| **Testador**            | Adriel Faria |
+
+### US08 - Teste de Aceitação(TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA08.01 | O usuário informa na tela as informações necessárias ao cadastro do coordenado, ao clicar no botão salvar os dados deve ser exibida uma mensagem de confirmação de cadastro.|
+| TA08.02 | Ao clicar em "listar coordenadores", todos os coordenadores devem ser exibidos, com sua respectiva(as) equipes e projeto(s)|
+| TA08.03 | Caso o usuário preencha alguns dos campos incorretamente durante o cadastro, deve ser exibida uma mensagem alertando qual campo foi preenchido incorretamente, além disso, os dados da tentativa fracassada não podem ser armazenados. |
+| TA08.04 | Na listagem de coordenadores o responsável pelo projeto poderá alterar as informações do coordenador clicando em "Alterar", posteriormente ele deverá preencher qual ou quais campos ele deseja alterar. Quando realizada a alteração uma mesagem de sucesso deve ser exibida, confimando que a alteração foi realizada com sucesso. |
+| TA08.05 | O responsável pelo projeto durante a alteração dos dados do coordenador preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
+| TA08.06 | No momento em que o responsável clicar em "deletar" o coornador deve ser excluido, e uma mesagem de sucesso deve ser exibida. Além disso, os projetos, equipes que ele esteja associado deverão apresentar o valor padrão |
+| TA08.07 | Realizado o cadastro, o coordenador poderá ou não estar associado a uma equipe ou projeto. Com isso deverão ser testadas as duas possibilidades e ambas devem receber confirmações de sucesso. |
+
+### US09 - Manter Equipe
+
+|            |            |
+|------------|------------|
+|**descrição**            | O sistema deve ser capaz de realizar o cadastro de equipe, inserindo também seus respectivos membros, projeto e coodenador. Além disso, deve ser capaz de realizar updates em seus respectivos atributos, leitura e delete. Uma equipe é composta por membros, é coordenada por um usuário coordenador e está associada a um projeto.|
+|**Requisitos envolvidos**| RF02, RF05 ,RF06, RF07|
+|**Prioridade**           | importante |
+|**Estimativa**           | 10h |
+|**Tempo gasto (real)**   | - |
+|**Tamanho Funcional**    | 10 |
+|**Analista**             | Guilherme Angelo de Medeiros |
+| **Revisor**             | Hilário Dantas |
+| **Testador**            | Adriel Faria |
+
+### US09 - Teste de Aceitação(TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA09.01 | O informa informa na tela as informações necessárias ao cadastro da equipe, ao clicar no botão salvar os dados deve ser exibida uma mensagem de confirmação.|
+| TA09.02 | Ao clicar em "listar equpes", Todos as equipes que existam devem ser exibidas.|
+| TA09.03 | Caso o usuário preencha alguns dos campos incorretamente durante o cadastro, deve ser exibida uma mensagem alertando qual campo foi preenchido incorretamente, além disso, os dados da tentativa fracassada não podem ser armazenados. |
+| TA09.04 | Na listagem de equipes o responsável pelo projeto poderá alterar a equipe clicando em "Alterar", posteriormente ele deverá preencher qual ou quais campos ele deseja alterar. Quando realizada a alteração, uma mesagem de sucesso deve ser exibida, confimando que a alteração foi realizada com sucesso. |
+| TA09.05 | O responsável pelo projeto durante a alteração da equipe preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
+| TA09.06 | A equipe no momento em que responsável ao clicar em "deletar" deve ser excluido a equipe, os membros e o projeto devem continuar existindo. Contudo, não devem fazer parte da equipe excluida e uma mesagem de sucesso deve ser exibida ao fim da exclusão. |
+
+### US10 - Manter Membro
+
+|            |            |
+|------------|------------|
+|**descrição**            | O sistema deve permitir que seja realizado o cadastro, leitura, update e delete de membros. Além disso, o membro é um usuário que pode coodenar ou ser coordenado e ele pode percetencer a nenhuma ou várias equipes. |
+|**Requisitos envolvidos**| RF05, RF06 ,RF07, RF08 |
+|**Prioridade**           | importante |
+|**Estimativa**           | 10h |
+|**Tempo gasto (real)**   | - |
+|**Tamanho Funcional**    | 10 |
+|**Analista**             | Adriel Faria |
+| **Revisor**             | Hilário Dantas |
+| **Testador**            | Guilherme Ângelo |
+
+### US10 - Teste de Aceitação(TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA10.01 | O usuário informa na tela as informações necessárias ao cadastro do membro, ao clicar no botão salvar os dados deve ser exibida uma mensagem de confirmação.|
+| TA10.02 | Ao clicar em "listar membros", Todos os membros devem ser exibidos juntamente com sua respectiva equipe. |
+| TA10.03 | Caso o usuário preencha alguns dos campos incorretamente durante o cadastro, deve ser exibida uma mensagem alertando qual campo foi preenchido incorretamente, além disso, os dados da tentativa fracassada não podem ser armazenados. |
+| TA10.04 | Na listagem de membros o responsável pelo projeto poderá alterar os dados do membro clicando em "Alterar", posteriormente, ele deverá preencher qual ou quais campos ele deseja alterar. Quando realizada a alteração uma mesagem de sucesso deve ser exibida, confimando que a alteração foi realizada com sucesso. |
+| TA10.05 | O responsável pelo projeto durante a alteração do artefato preenche informações inválidas, ao clicar em "Salvar" deve ser exibida um mensagem de erro, alertando o usuário qual(is) campo(s) foi preenchido incorretamente. |
+| T10.06 | O membro no momento em que responsável pelo projeto ao clicar em "deletar" deve ser excluido, e uma mesagem de sucesso deve ser exibida. |
+
 ### US11 - Manter Atividade
 
 |     |     |
