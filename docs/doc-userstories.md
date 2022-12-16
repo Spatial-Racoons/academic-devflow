@@ -400,16 +400,55 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | **Estimativa** | 10h |
 | **Tempo gasto (real)** | - |
 | **Tamanho funcional** | - |
-| **Analista** | Hilário Petronio de Medeiros Dantas |
-| **Desenvolvedor** | - |
+| **Analista** | Hilário Dantas |
+| **Desenvolvedor** | Guilherme Ângelo  |
 | **Revisor** | - |
-| **Testador** | - |
+| **Testador** | Adriel Faria |
 
-### US14 - Testes de Aceitação (TA)
+### US15 - Testes de Aceitação (TA)
 
 | Código | Descrição |
 |-----|-----|
-| TA14.01 | O usuário acessa a página de relatórios e clica no botão emitir relatório de equipe, um relatório com informações da equipe, projeto, artefatos, atividades e pontuações deve ser mostrado na tela.| 
-| TA14.02 | O usuário acessa a página de relatórios e clica no botão emitir relatório de membro, um relatório com informações da equipe, projeto, artefatos, atividades e pontuações deve ser mostrado na tela.| 
-| TA14.03 | O usuário acessa a página de relatórios e clica no botão emitir relatório de projetos ativos, um relatório com uma lista de todos os projetos ativos deve ser mostrado na tela.| 
- 
+| TA15.01 | O usuário acessa a página de dashboard, seleciona o projeto e na tela será mostrado um dashboard com gráficos e figuras a cerca do projeto selecionado| 
+
+### US16 - Cadastrar pontuação
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir que o coordenador atribua pontuações para cada etapa do projeto.|
+| **Requisitos envolvidos** | RF01, RF2, RF5, RF18, RNF1, RNF2| 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Hilário  Dantas |
+| **Desenvolvedor** | Guilherme Ângelo |
+| **Revisor** | - |
+| **Testador** | Adriel Faria |
+
+### US16 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA16.01 | O coordenador acessa a página de projetos, seleciona o projeto e atribui uma pontuação para cada etapa do projeto.| 
+
+### US17 - Cadastrar penalidade
+
+|     |     |
+| --- | --- |
+| **Descrição** | O sistema deve permitir que o coordenador atribua penalidades para atrasos de tarefas ou não entrega de artefatos.|
+| **Requisitos envolvidos** | RF01, RF2, RF5, RF18, RF19, RNF1, RNF2| 
+| **Prioridade** | Desejável |
+| **Estimativa** | 10h |
+| **Tempo gasto (real)** | - |
+| **Tamanho funcional** | - |
+| **Analista** | Hilário Dantas |
+| **Desenvolvedor** | Adriel Faria |
+| **Revisor** | - |
+| **Testador** | Guilherme Ângelo  |
+
+### US17 - Testes de Aceitação (TA)
+
+| Código | Descrição |
+|-----|-----|
+| TA17.01 | O coordenador acessa a página de projetos, seleciona o projeto e atribui uma penalidade para atrasos de tarefas ou artefatos.| 
