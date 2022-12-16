@@ -389,27 +389,3 @@ Este documento descreve os User Stories criados a partir da Lista de Requisitos 
 | TA13.04 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de release?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Apagar". O sistema apaga o plano de release e redireciona o usuário a página de planos de release, na qual exibe a mensagem "Plano de release apagado". |
 | TA13.05 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que não. O sistema redireciona o usuário para a tela de confirmação de exclusão, onde é exibida a mensagem "Apagar o plano de release?" e os botões "Apagar" e "Cancelar". O usuário aperta o botão "Cancelar". O sistema não apaga o plano de release e redireciona o usuário a página de planos de release. |
 | TA13.06 | O usuário acessa a página de visualização de um de seus planos de release e seleciona o botão excluir. O sistema verifica se aquele plano pertence a algum projeto e determina que sim. O sistema redireciona o usuário para a página de planos de release, na qual a mensagem "Remova os projetos do plano de release antes de excluí-lo" é exibida. |
-
-### US14 - Emitir relatório
-
-|     |     |
-| --- | --- |
-| **Descrição** | O sistema deve ser capaz de emitir relatórios com informações acerca de equipes, membros e projetos. |
-| **Requisitos envolvidos** | RF01, RF6, RF7, RF15, RNF1, RNF2, RNF5 | 
-| **Prioridade** | Desejável |
-| **Estimativa** | 10h |
-| **Tempo gasto (real)** | - |
-| **Tamanho funcional** | - |
-| **Analista** | Hilário Petronio de Medeiros Dantas |
-| **Desenvolvedor** | - |
-| **Revisor** | - |
-| **Testador** | - |
-
-### US14 - Testes de Aceitação (TA)
-
-| Código | Descrição |
-|-----|-----|
-| TA14.01 | O usuário acessa a página de relatórios e clica no botão emitir relatório de equipe, um relatório com informações da equipe, projeto, artefatos, atividades e pontuações deve ser mostrado na tela.| 
-| TA14.02 | O usuário acessa a página de relatórios e clica no botão emitir relatório de membro, um relatório com informações da equipe, projeto, artefatos, atividades e pontuações deve ser mostrado na tela.| 
-| TA14.03 | O usuário acessa a página de relatórios e clica no botão emitir relatório de projetos ativos, um relatório com uma lista de todos os projetos ativos deve ser mostrado na tela.| 
- 
